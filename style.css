@@ -159,28 +159,33 @@ h2 {
     color: #cccccc;
 }
 
-/* ================= ROADMAP ================= */
+ /* ================= OFFICIAL LINKS IMPROVED ================= */
 
-#roadmap p {
-    font-size: 17px;
-    transition: 0.3s ease;
+#official-links {
+    background: #111111;
+    text-align: center;
 }
 
-#roadmap p:hover {
-    background: #1a1a1a;
-    border-radius: 8px;
-    padding-left: 10px;
+.official-container {
+    max-width: 900px;
 }
 
-/* ================= OFFICIAL LINKS ================= */
+.official-links-list {
+    font-size: 18px;
+    line-height: 2.2;
+}
 
 #official-links a {
+    color: #f5c542;
+    font-weight: 600;
+    text-decoration: none;
     transition: 0.3s ease;
 }
 
 #official-links a:hover {
     color: #ffd966;
     text-decoration: underline;
+    letter-spacing: 0.5px;
 }
 
 /* ================= FOOTER ================= */
@@ -204,3 +209,4 @@ footer {
         font-size: 26px;
     }
 }
+

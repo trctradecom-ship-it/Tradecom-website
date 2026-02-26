@@ -311,3 +311,65 @@ a:active,
 a:focus{
 outline:none;
 }
+
+/* ===================================
+   OFFICIAL LINKS GRID SECTION
+=================================== */
+
+#official-links {
+    background: #0b0b0b;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.official-container h2 {
+    margin-bottom: 50px;
+}
+
+/* GRID LAYOUT */
+.official-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CARD STYLE */
+.official-card {
+    background: #1a1a1a;
+    padding: 35px 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #f5c542;
+    transition: 0.3s ease;
+    border: 1px solid #222;
+    box-shadow: 0 0 20px rgba(245,197,66,0.12);
+}
+
+/* ICON */
+.official-card span {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.official-card p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* HOVER EFFECT */
+.official-card:hover {
+    transform: translateY(-8px);
+    background: #f5c542;
+    color: #000;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+    .official-card {
+        padding: 25px 15px;
+    }
+}

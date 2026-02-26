@@ -311,3 +311,25 @@ footer {
         font-size: 26px;
     }
 }
+
+/* ===============================
+   LINK COLORS FIX
+================================ */
+
+a {
+    color: #f5c542;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #f5c542;
+}
+
+a:active {
+    color: #ffcf5c;
+}

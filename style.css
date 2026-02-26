@@ -333,3 +333,106 @@ a:visited {
 a:active {
     color: #ffcf5c;
 }
+
+/* ===============================
+   HERO PREMIUM DESIGN
+================================ */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #0b0b0b 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-title span {
+    color: #f5c542;
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    color: #cccccc;
+    margin-bottom: 50px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* GOLD BUTTON */
+.btn-primary {
+    padding: 16px 45px;
+    background: #f5c542;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(245, 197, 66, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(245, 197, 66, 0.7);
+}
+
+/* OUTLINE BUTTON */
+.btn-outline {
+    padding: 16px 45px;
+    border: 2px solid #f5c542;
+    color: #f5c542;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #f5c542;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

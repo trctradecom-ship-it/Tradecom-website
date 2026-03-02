@@ -422,3 +422,49 @@ outline:none;
         padding: 35px 20px;
     }
 }
+
+ /* ================= NEW HERO BUTTON LINKS ================= */
+
+.hero-buttons a.btn-primary {
+    padding: 16px 50px;               /* Slightly wider for visibility */
+    background-color: #f5c542;        /* Gold background */
+    color: #000;                       /* Black text */
+    border-radius: 50px;               /* Rounded button */
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-buttons a.btn-primary:hover {
+    background-color: #ffd966;        /* Slightly lighter gold on hover */
+    transform: translateY(-2px);
+}
+
+.hero-buttons a.btn-outline {
+    padding: 16px 50px;
+    border: 2px solid #f5c542;        /* Gold border */
+    color: #f5c542;                   /* Gold text */
+    background: transparent;           /* Transparent background */
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.hero-buttons a.btn-outline:hover {
+    background-color: #f5c542;        /* Gold background on hover */
+    color: #000;                       /* Black text */
+    transform: translateY(-2px);
+}
+
+/* ================= MOBILE HERO BUTTONS ================= */
+@media (max-width: 768px) {
+    .hero-buttons a.btn-primary,
+    .hero-buttons a.btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+    }
+}

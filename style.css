@@ -688,3 +688,81 @@ outline:none;
 
 
 
+
+
+
+
+
+.ecosystem-section {
+    background: radial-gradient(circle at center, #020024, #000000);
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecosystem-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+/* Center Circle */
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 150px;
+    height: 150px;
+    
+    background: linear-gradient(135deg, #ff0066, #ff3d9a);
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+    box-shadow: 0 0 25px rgba(255, 0, 102, 0.8);
+}
+
+/* Common Circle Style */
+.circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+/* Positioning Circles (Around Center) */
+.c1 { top: 0; left: 50%; transform: translateX(-50%); background: #00c2c7; }
+.c2 { top: 15%; right: 0; background: #c86dd7; }
+.c3 { top: 50%; right: -20px; transform: translateY(-50%); background: #ff3d6d; }
+.c4 { bottom: 15%; right: 0; background: #7a5cff; }
+.c5 { bottom: 0; left: 50%; transform: translateX(-50%); background: #ff9900; }
+.c6 { bottom: 15%; left: 0; background: #1ea7ff; }
+.c7 { top: 50%; left: -20px; transform: translateY(-50%); background: #00c47a; }
+.c8 { top: 15%; left: 0; background: #ff5edc; }
+
+

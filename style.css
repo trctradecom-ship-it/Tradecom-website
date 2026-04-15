@@ -624,3 +624,78 @@ outline:none;
 }
 
 
+
+
+
+
+
+
+
+/* Base (PC + Laptop) */
+section {
+  padding: 30px 20px;
+  margin: 0;
+}
+
+/* ICO buttons */
+.ico-btn {
+  display: block;
+  margin: 12px auto;
+  padding: 14px 24px;
+  border-radius: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* About title */
+.about-title {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* About text */
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding: 0 15px;
+}
+
+/* Feature cards */
+.feature-card {
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 18px;
+  border-radius: 15px;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 600px) {
+
+  section {
+    padding: 15px 10px;
+  }
+
+  .ico-btn {
+    margin: 10px auto;
+    padding: 12px 18px;
+    max-width: 90%;
+  }
+
+  .about-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .feature-card {
+    margin: 10px;
+    padding: 15px;
+  }
+}

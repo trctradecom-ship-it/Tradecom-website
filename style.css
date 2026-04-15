@@ -547,3 +547,25 @@ outline:none;
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(245, 193, 93, 0.3);
 }
+
+
+
+
+
+
+
+
+
+
+.hero {
+    text-align: center;
+}
+
+.hero-logo {
+    width: 120px;       /* perfect size */
+    height: auto;
+    margin-bottom: 20px;
+    
+    /* optional glow effect */
+    filter: drop-shadow(0 0 10px rgba(245, 193, 93, 0.4));
+}

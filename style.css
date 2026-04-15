@@ -695,7 +695,7 @@ outline:none;
 
 .ecosystem-section {
     background: radial-gradient(circle at center, #020024, #000000);
-    padding: 100px 0;
+    padding: 110px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -703,21 +703,22 @@ outline:none;
 
 .ecosystem-container {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 540px;
+    height: 540px;
 }
 
-/* Center Circle */
+/* ===== GOLD CENTER CIRCLE ===== */
 .center-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     
-    background: linear-gradient(135deg, #ff0066, #ff3d9a);
+    /* GOLD PREMIUM GRADIENT */
+    background: linear-gradient(135deg, #FFD700, #FFB700, #FFA500);
     border-radius: 50%;
     
     display: flex;
@@ -725,18 +726,53 @@ outline:none;
     align-items: center;
     text-align: center;
 
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
+    color: #111;
+    font-weight: 800;
+    font-size: 18px;
 
-    box-shadow: 0 0 25px rgba(255, 0, 102, 0.8);
+    z-index: 10;
+
+    /* GLOW */
+    box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.7),
+        0 0 40px rgba(255, 165, 0, 0.6);
+
+    /* SMOOTH ANIMATION */
+    animation: goldGlow 2s infinite alternate;
 }
 
-/* Common Circle Style */
+/* GOLD GLOW ANIMATION */
+@keyframes goldGlow {
+    from {
+        box-shadow: 
+            0 0 20px rgba(255, 215, 0, 0.6),
+            0 0 40px rgba(255, 165, 0, 0.5);
+    }
+    to {
+        box-shadow: 
+            0 0 45px rgba(255, 215, 0, 1),
+            0 0 80px rgba(255, 165, 0, 0.9);
+    }
+}
+
+/* SHINE EFFECT */
+.center-circle::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    width: 65%;
+    height: 35%;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    filter: blur(8px);
+}
+
+/* ===== COMMON CIRCLE ===== */
 .circle {
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     
     display: flex;
@@ -748,14 +784,22 @@ outline:none;
     font-weight: 600;
     font-size: 14px;
 
-    transition: 0.3s;
+    cursor: pointer;
+
+    /* IMPORTANT: smooth + no shift */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    will-change: transform;
 }
 
+/* 🔥 HOVER (NO DISTURB OTHER CIRCLES) */
 .circle:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+    z-index: 20;
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
 }
 
-/* Positioning Circles (Around Center) */
+/* ===== POSITIONS ===== */
 .c1 { top: 0; left: 50%; transform: translateX(-50%); background: #00c2c7; }
 .c2 { top: 15%; right: 0; background: #c86dd7; }
 .c3 { top: 50%; right: -20px; transform: translateY(-50%); background: #ff3d6d; }
@@ -765,4 +809,26 @@ outline:none;
 .c7 { top: 50%; left: -20px; transform: translateY(-50%); background: #00c47a; }
 .c8 { top: 15%; left: 0; background: #ff5edc; }
 
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
 
+    .ecosystem-container {
+        width: 340px;
+        height: 340px;
+    }
+
+    .center-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        font-size: 11px;
+    }
+
+    .c3 { right: -10px; }
+    .c7 { left: -10px; }
+}

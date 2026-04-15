@@ -575,31 +575,13 @@ outline:none;
 
 
 @media (max-width: 768px) {
-
-    .hero {
-        padding-bottom: 40px; /* reduce extra space pushing down */
+    #roadmap, .about {
+        clear: both;
+        display: block;
+        margin-top: 20px;
     }
-
-    .hero-buttons {
-        margin-bottom: 25px; /* space below buttons */
-    }
-
-    .about {
-        margin-top: 20px; /* small gap only */
-    }
-
 }
 
-
-
-
-@media (max-width: 768px) {
-
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px; /* controls spacing perfectly */
-    }
-
+.hero {
+    overflow: hidden;
 }

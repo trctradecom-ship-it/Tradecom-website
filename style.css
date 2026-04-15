@@ -499,11 +499,10 @@ outline:none;
 
 
 
-.trc-box h3 {
-    margin-bottom: 10px;
-}
-
-.trc-box p {
-    margin-bottom: 15px;
-    opacity: 0.8;
+.trc-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

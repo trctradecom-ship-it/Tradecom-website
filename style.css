@@ -693,31 +693,33 @@ outline:none;
 
 
 
+/* ===== SECTION ===== */
 .ecosystem-section {
     background: radial-gradient(circle at center, #020024, #000000);
-    padding: 110px 0;
+    padding: 80px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ===== CONTAINER ===== */
 .ecosystem-container {
     position: relative;
-    width: 540px;
-    height: 540px;
+    width: 520px;
+    height: 520px;
+    max-width: 100%;
 }
 
-/* ===== GOLD CENTER CIRCLE ===== */
+/* ===== CENTER (GOLD) ===== */
 .center-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     
-    /* GOLD PREMIUM GRADIENT */
     background: linear-gradient(135deg, #FFD700, #FFB700, #FFA500);
     border-radius: 50%;
     
@@ -728,51 +730,28 @@ outline:none;
 
     color: #111;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
 
     z-index: 10;
 
-    /* GLOW */
-    box-shadow: 
-        0 0 20px rgba(255, 215, 0, 0.7),
-        0 0 40px rgba(255, 165, 0, 0.6);
-
-    /* SMOOTH ANIMATION */
     animation: goldGlow 2s infinite alternate;
 }
 
-/* GOLD GLOW ANIMATION */
+/* Glow */
 @keyframes goldGlow {
     from {
-        box-shadow: 
-            0 0 20px rgba(255, 215, 0, 0.6),
-            0 0 40px rgba(255, 165, 0, 0.5);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     }
     to {
-        box-shadow: 
-            0 0 45px rgba(255, 215, 0, 1),
-            0 0 80px rgba(255, 165, 0, 0.9);
+        box-shadow: 0 0 50px rgba(255, 215, 0, 1);
     }
 }
 
-/* SHINE EFFECT */
-.center-circle::after {
-    content: "";
-    position: absolute;
-    top: 12%;
-    left: 18%;
-    width: 65%;
-    height: 35%;
-    background: rgba(255,255,255,0.25);
-    border-radius: 50%;
-    filter: blur(8px);
-}
-
-/* ===== COMMON CIRCLE ===== */
+/* ===== CIRCLES ===== */
 .circle {
     position: absolute;
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     
     display: flex;
@@ -782,53 +761,58 @@ outline:none;
 
     color: white;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
 
     cursor: pointer;
 
-    /* IMPORTANT: smooth + no shift */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    will-change: transform;
 }
 
-/* 🔥 HOVER (NO DISTURB OTHER CIRCLES) */
+/* Hover (safe) */
 .circle:hover {
-    transform: scale(1.15);
+    transform: scale(1.12);
     z-index: 20;
-    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
 }
 
-/* ===== POSITIONS ===== */
+/* ===== POSITIONS (DESKTOP) ===== */
 .c1 { top: 0; left: 50%; transform: translateX(-50%); background: #00c2c7; }
 .c2 { top: 15%; right: 0; background: #c86dd7; }
-.c3 { top: 50%; right: -20px; transform: translateY(-50%); background: #ff3d6d; }
+.c3 { top: 50%; right: -15px; transform: translateY(-50%); background: #ff3d6d; }
 .c4 { bottom: 15%; right: 0; background: #7a5cff; }
 .c5 { bottom: 0; left: 50%; transform: translateX(-50%); background: #ff9900; }
 .c6 { bottom: 15%; left: 0; background: #1ea7ff; }
-.c7 { top: 50%; left: -20px; transform: translateY(-50%); background: #00c47a; }
+.c7 { top: 50%; left: -15px; transform: translateY(-50%); background: #00c47a; }
 .c8 { top: 15%; left: 0; background: #ff5edc; }
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* ===== 🔥 MOBILE FIX (IMPORTANT) ===== */
 @media (max-width: 600px) {
 
     .ecosystem-container {
-        width: 340px;
-        height: 340px;
+        width: 300px;
+        height: 300px;
     }
 
     .center-circle {
-        width: 120px;
-        height: 120px;
-        font-size: 14px;
+        width: 110px;
+        height: 110px;
+        font-size: 13px;
     }
 
     .circle {
-        width: 70px;
-        height: 70px;
-        font-size: 11px;
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        padding: 5px;
     }
 
-    .c3 { right: -10px; }
-    .c7 { left: -10px; }
+    /* PERFECT ROUND SPACING */
+    .c1 { top: -5px; left: 50%; transform: translateX(-50%); }
+    .c2 { top: 10%; right: -5px; }
+    .c3 { top: 50%; right: -10px; transform: translateY(-50%); }
+    .c4 { bottom: 10%; right: -5px; }
+    .c5 { bottom: -5px; left: 50%; transform: translateX(-50%); }
+    .c6 { bottom: 10%; left: -5px; }
+    .c7 { top: 50%; left: -10px; transform: translateY(-50%); }
+    .c8 { top: 10%; left: -5px; }
 }

@@ -938,3 +938,126 @@ outline:none;
         font-size: 13px;
     }
 }
+
+
+
+
+
+
+
+/* ===== SECTION ===== */
+.tax-benefits {
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CENTER CONTAINER */
+.tax-benefits .container {
+    max-width: 850px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ===== GOLD TITLE ===== */
+.gold-title {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+    background: linear-gradient(90deg, #FFD700, #FFB700, #FFF5B7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 3s linear infinite;
+}
+
+/* SHINING TEXT ANIMATION */
+@keyframes shine {
+    0% { background-position: 0%; }
+    100% { background-position: 200%; }
+}
+
+/* ===== MAIN BOX ===== */
+.tax-box {
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 40px 30px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 0 25px rgba(255,215,0,0.15),
+        0 0 50px rgba(255,215,0,0.1);
+
+    transition: 0.4s ease;
+}
+
+/* HOVER GLOW */
+.tax-box:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 40px rgba(255,215,0,0.3),
+        0 0 80px rgba(255,215,0,0.2);
+}
+
+/* ===== INTRO TEXT ===== */
+.tax-intro {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ===== LIST ===== */
+.tax-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tax-list li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* GOLD DOT */
+.tax-list li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+/* ===== NOTE ===== */
+.tax-note {
+    margin-top: 20px;
+    color: #00ffae;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+    .gold-title {
+        font-size: 24px;
+    }
+
+    .tax-box {
+        padding: 25px 18px;
+    }
+
+    .tax-intro {
+        font-size: 14px;
+    }
+
+    .tax-list li {
+        font-size: 13px;
+    }
+}
+

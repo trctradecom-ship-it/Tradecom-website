@@ -668,6 +668,23 @@ outline:none;
 
 
 
+@media (min-width: 769px) {
+
+    .hero-logo {
+        margin-bottom: 5px;   /* reduce gap below logo */
+    }
+
+    .hero-title {
+        margin-top: 0 !important;   /* remove space above text */
+        margin-bottom: 8px;         /* reduce space below title */
+    }
+
+    .hero p {
+        margin-bottom: 15px !important;  /* reduce space before buttons */
+    }
+
+}
+
 
 
 

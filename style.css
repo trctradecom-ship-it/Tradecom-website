@@ -562,9 +562,9 @@ outline:none;
 }
 
 .hero-logo {
-    width: 120px;       /* perfect size */
+    width: 200px;       /* perfect size */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     /* optional glow effect */
     filter: drop-shadow(0 0 10px rgba(245, 193, 93, 0.4));

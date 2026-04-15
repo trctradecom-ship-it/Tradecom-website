@@ -588,54 +588,16 @@ outline:none;
 
 
 
-/* APPLY ONLY ON MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-  /* Fix overlap issue */
-  .about-title {
-    position: static;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+    .hero {
+        padding-bottom: 60px;  /* creates space below buttons */
+    }
 
-  .about-section {
-    margin-top: 10px;
-  }
+    .hero-buttons {
+        margin-bottom: 20px;   /* space after buttons */
+    }
 
-  /* Make logo bigger */
-  .hero-logo {
-    width: 180px;
-    margin-bottom: 8px;
-  }
-
-  /* Reduce spacing so it fits nicely */
-  .hero-title {
-    margin: 5px 0;
-    font-size: 32px;
-  }
-
-  .hero-subtitle {
-    margin: 5px 0;
-    font-size: 24px;
-  }
-
-  .hero-description {
-    margin: 5px 0 12px;
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  /* Keep buttons clean */
-  .ico-btn {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  /* IMPORTANT: prevent any breaking */
-  body {
-    overflow-x: hidden;
-  }
 }
 
 

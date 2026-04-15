@@ -585,3 +585,16 @@ outline:none;
 .hero {
     overflow: hidden;
 }
+
+
+
+
+@media (max-width: 768px) {
+
+    .hero-subtitle {
+        width: 100%;
+        max-width: 300px;   /* keeps text inside box */
+        margin: 0 auto;     /* center it */
+    }
+
+}

@@ -588,3 +588,39 @@ outline:none;
 
 
 
+
+
+
+
+/* Section spacing */
+.hero-section {
+  padding-bottom: 20px;
+}
+
+/* Reduce gap under text */
+.hero-description {
+  margin-bottom: 15px;
+}
+
+/* ICO button */
+.ico-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* About TRC section */
+.about-section {
+  margin-top: 20px; /* push it down properly */
+  padding-top: 10px;
+}
+
+/* Fix overlap issue */
+.about-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+

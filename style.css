@@ -702,11 +702,29 @@ section {
 
 
 
+/* Desktop / Laptop */
 .hero-logo {
     width: 260px;
-    margin-bottom: 5px;   /* reduce space below logo */
+    height: auto;
+    margin-bottom: 5px;
 }
 
 .hero-title {
-    margin-top: 0;        /* remove top space of text */
+    margin-top: 0;
+}
+
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+
+    .hero-logo {
+        width: 150px;   /* smaller for mobile */
+        margin-bottom: 5px;
+    }
+
+    .hero-title {
+        margin-top: 0;
+        font-size: 26px; /* prevents layout break */
+    }
+
 }

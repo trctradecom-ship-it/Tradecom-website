@@ -589,12 +589,9 @@ outline:none;
 
 
 
-@media (max-width: 768px) {
-
-    .hero-subtitle {
-        width: 100%;
-        max-width: 300px;   /* keeps text inside box */
-        margin: 0 auto;     /* center it */
-    }
-
+.hero-description {
+  position: relative;
+  top: -20px; /* adjust: -10, -15, -25 as needed */
+  text-align: center;
+  padding: 0 15px;
 }

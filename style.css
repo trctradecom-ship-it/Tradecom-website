@@ -506,3 +506,44 @@ outline:none;
     align-items: center;
     text-align: center;
 }
+
+
+
+
+
+
+
+#roadmap {
+    padding: 80px 20px;
+    background: #0b0b0b;
+    text-align: center; /* centers heading */
+}
+
+#roadmap .container {
+    max-width: 900px;   /* keeps content centered */
+    margin: 0 auto;     /* center horizontally */
+}
+
+#roadmap h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f5c15d;
+}
+
+.roadmap-item {
+    background: #141414;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    text-align: center;   /* center text inside */
+    font-size: 18px;
+    color: #fff;
+
+    /* smooth UI */
+    transition: 0.3s;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(245, 193, 93, 0.3);
+}

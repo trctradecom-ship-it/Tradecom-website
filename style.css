@@ -623,14 +623,14 @@ outline:none;
 /* LOGO SIZE FIXED FOR PC + MOBILE */
 
 .hero-logo {
-    width: 260px;   /* PC size */
+    width: 250px;   /* PC size */
     height: auto;
     margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {
     .hero-logo {
-        width: 200px;   /* Mobile size */
+        width: 250px;   /* Mobile size */
     }
 }
 

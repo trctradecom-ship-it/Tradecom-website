@@ -1061,3 +1061,44 @@ outline:none;
     }
 }
 
+
+
+
+
+
+.tax-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 520px;
+    text-align: left;
+}
+
+/* LIST ITEMS */
+.tax-list li {
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+/* GLOW DOT */
+.tax-list li::before {
+    content: "";
+    
+    width: 7px;
+    height: 7px;
+    
+    background: #FFD700;
+    border-radius: 50%;
+    
+    margin-right: 8px; /* 🔥 controls distance (perfect touch) */
+
+    box-shadow:
+        0 0 6px #FFD700,
+        0 0 12px #FFD700;
+
+    flex-shrink: 0;
+}

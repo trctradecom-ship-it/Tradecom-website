@@ -816,3 +816,125 @@ outline:none;
     .c7 { top: 50%; left: -10px; transform: translateY(-50%); }
     .c8 { top: 10%; left: -5px; }
 }
+
+
+
+
+
+
+
+
+
+
+/* ===== SECTION ===== */
+.scarcity {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CONTAINER CENTER ===== */
+.scarcity .container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ===== HEADING ===== */
+.scarcity h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FFD700, #FFB700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== MAIN BOX ===== */
+.scarcity-box {
+    background: rgba(255,255,255,0.05);
+    border-radius: 18px;
+    padding: 35px 25px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 
+        0 0 20px rgba(255,255,255,0.05),
+        0 0 40px rgba(255,215,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.scarcity-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 
+        0 0 30px rgba(255,215,0,0.2),
+        0 0 60px rgba(255,215,0,0.15);
+}
+
+/* ===== TITLE ===== */
+.scarcity-box h3 {
+    font-size: 22px;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+/* ===== TEXT ===== */
+.scarcity-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+/* ===== LIST CENTERED ===== */
+.scarcity-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* LIST ITEMS */
+.scarcity-box li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+/* ===== NOTE ===== */
+.scarcity-note {
+    margin-top: 15px;
+    color: #00ffae;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+
+    .scarcity {
+        padding: 60px 15px;
+    }
+
+    .scarcity h2 {
+        font-size: 24px;
+    }
+
+    .scarcity-box {
+        padding: 25px 18px;
+    }
+
+    .scarcity-box h3 {
+        font-size: 18px;
+    }
+
+    .scarcity-box p {
+        font-size: 14px;
+    }
+
+    .scarcity-box li {
+        font-size: 13px;
+    }
+}

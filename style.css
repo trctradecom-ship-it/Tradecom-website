@@ -1220,6 +1220,8 @@ outline:none;
 
 
 
+
+
 /* ===== SECTION ===== */
 .indicator-section {
     padding: 100px 20px;
@@ -1227,7 +1229,7 @@ outline:none;
     justify-content: center;
     align-items: center;
 
-    /* DARK + GOLD GLOW BACKGROUND */
+    /* ✅ KEEP GOLD BACKGROUND SHINE */
     background: radial-gradient(circle at center, rgba(255,215,0,0.08), #000 70%);
 }
 
@@ -1264,43 +1266,28 @@ outline:none;
     border-radius: 20px;
     overflow: hidden;
 
-    /* GOLD GLOW FRAME */
+    /* ✅ KEEP NORMAL GOLD FRAME */
     box-shadow:
         0 0 30px rgba(255,215,0,0.25),
         0 0 80px rgba(255,215,0,0.15);
 
-    transition: 0.4s ease;
+    /* ❌ REMOVE ANIMATION */
+    transition: none;
 }
 
-/* HOVER EFFECT */
-.indicator-box:hover {
-    transform: scale(1.02);
-    box-shadow:
-        0 0 50px rgba(255,215,0,0.4),
-        0 0 120px rgba(255,215,0,0.25);
-}
+/* ❌ REMOVE HOVER COMPLETELY */
+/* .indicator-box:hover { } */
 
-/* IMAGE */
+/* ===== IMAGE ===== */
 .indicator-box img {
     width: 100%;
     display: block;
     border-radius: 20px;
 }
 
-/* ===== GOLD BORDER ANIMATION ===== */
+/* ❌ REMOVE HOVER BORDER ANIMATION ONLY */
 .indicator-box::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
-
-    background: linear-gradient(120deg, transparent, rgba(255,215,0,0.4), transparent);
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.indicator-box:hover::before {
-    opacity: 1;
+    display: none;
 }
 
 /* ===== MOBILE ===== */
@@ -1318,8 +1305,3 @@ outline:none;
         font-size: 14px;
     }
 }
-
-
-
-
-

@@ -670,6 +670,8 @@ section {
   border-radius: 15px;
 }
 
+
+
 /* ---------------- MOBILE ---------------- */
 @media (max-width: 600px) {
 
@@ -699,6 +701,7 @@ section {
     padding: 15px;
   }
 }
+
 
 
 

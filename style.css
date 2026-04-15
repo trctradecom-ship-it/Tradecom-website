@@ -699,3 +699,14 @@ section {
     padding: 15px;
   }
 }
+
+
+
+.hero-logo {
+    width: 260px;
+    margin-bottom: 5px;   /* reduce space below logo */
+}
+
+.hero-title {
+    margin-top: 0;        /* remove top space of text */
+}

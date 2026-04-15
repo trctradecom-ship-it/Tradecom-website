@@ -656,7 +656,7 @@ outline:none;
 .hero-logo {
     width: 250px;   /* PC size */
     height: auto;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {

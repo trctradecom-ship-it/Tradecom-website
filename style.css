@@ -551,7 +551,21 @@ outline:none;
 
 
 
+@media (min-width: 769px) {
 
+    .hero-title {
+        margin-bottom: 8px;   /* reduce space below title */
+    }
+
+    .hero-subtitle {
+        margin-bottom: 15px;  /* reduce space below subtitle */
+    }
+
+    .hero-buttons {
+        margin-top: 5px;      /* bring buttons closer */
+    }
+
+}
 
 
 

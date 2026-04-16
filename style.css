@@ -1556,5 +1556,18 @@ body {
 
 
 
+@media (max-width: 600px) {
+
+    .ico-box {
+        grid-template-columns: 1fr; /* 🔥 MAIN FIX */
+    }
+
+    .ico-summary,
+    .dex-launch {
+        grid-column: span 1; /* reset */
+    }
+
+}
+
 
 

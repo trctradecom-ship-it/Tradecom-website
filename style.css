@@ -1647,3 +1647,24 @@ body {
 
 
 
+
+
+
+.services-title {
+    display: block;
+    width: 100%;
+    text-align: center !important;  /* 🔥 force center */
+
+    font-size: 26px;
+    font-weight: 700;
+    margin: 30px auto 15px;
+
+    /* DARK GOLD */
+    background: linear-gradient(90deg, #c9a227, #a67c00, #e6c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 1px;
+}
+
+

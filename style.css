@@ -1534,6 +1534,26 @@ body {
 
 
 
+/* FULL WIDTH ROWS */
+.ico-summary {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.dex-launch {
+    grid-column: span 2;  /* 🔥 KEY FIX */
+    text-align: center;
+}
+
+/* OPTIONAL NICE TEXT STYLE */
+.ico-note {
+    font-size: 13px;
+    color: #00ffae;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+
 
 
 

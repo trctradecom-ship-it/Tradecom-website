@@ -1571,3 +1571,79 @@ body {
 
 
 
+
+
+
+/* ===== VISION SECTION ===== */
+.vision {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg, #000, #0a0a0a);
+}
+
+/* CENTER BOX */
+.vision-box {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 40px 30px;
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 215, 0, 0.15);
+
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.08);
+}
+
+/* TITLE */
+.vision-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg, #FFD700, #FFB700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TEXT */
+.vision-box p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* LAST PARAGRAPH LESS SPACE */
+.vision-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+    .vision {
+        padding: 70px 15px;
+    }
+
+    .vision-box {
+        padding: 25px 18px;
+    }
+
+    .vision-box h2 {
+        font-size: 24px;
+    }
+
+    .vision-box p {
+        font-size: 14px;
+    }
+}
+
+
+
+

@@ -1305,3 +1305,122 @@ outline:none;
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+/* =========================
+   SOFT DARK BACKGROUND (UP-DOWN GLOW)
+========================= */
+body {
+  background: linear-gradient(180deg, #000000, #111111, #000000);
+  background-size: 100% 200%;
+  animation: bgFlow 8s ease-in-out infinite;
+  color: #ffffff;
+}
+
+@keyframes bgFlow {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+
+/* =========================
+   ICO TITLE GOLD GLOW
+========================= */
+.ico-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffd700;
+
+  text-shadow:
+    0 0 6px #ffd700,
+    0 0 12px rgba(255, 215, 0, 0.6);
+
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    text-shadow:
+      0 0 5px #ffd700,
+      0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  to {
+    text-shadow:
+      0 0 12px #ffd700,
+      0 0 25px rgba(255, 215, 0, 0.8);
+  }
+}
+
+
+/* =========================
+   ICO CARD (SOFT GOLD LOOK)
+========================= */
+.ico-card {
+  position: relative;
+  background: #111;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 15px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 215, 0, 0.25);
+
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+
+/* =========================
+   SOFT SHINE (UP-DOWN SWEEP)
+========================= */
+.ico-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 215, 0, 0.25),
+    transparent
+  );
+
+  animation: shineVertical 4s ease-in-out infinite;
+}
+
+@keyframes shineVertical {
+  0% { top: -100%; }
+  50% { top: 100%; }
+  100% { top: -100%; }
+}
+
+
+/* =========================
+   HOVER (LIGHT GLOW ONLY)
+========================= */
+.ico-card:hover {
+  box-shadow:
+    0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+
+/* =========================
+   GOLD TEXT
+========================= */
+.gold-text {
+  color: #ffd700;
+  font-weight: 600;
+}

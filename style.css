@@ -1434,52 +1434,37 @@ body {
 
 
 
-
-/* =========================
-   ICO STATUS TEXT (PREMIUM GOLD)
-========================= */
+/* TARGET ONLY THIS TEXT */
 .ico-status {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-
-  font-size: 34px;
-  font-weight: 600;
-
-  /* dark gold gradient */
-  background: linear-gradient(90deg, #b8962e, #ffd700, #b8962e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  letter-spacing: 0.5px;
+  gap: 8px;
 }
 
 
-/* =========================
-   RED LIVE DOT (BLINK CLEAN)
-========================= */
+/* GOLD BLINK DOT */
 .ico-status::after {
   content: "";
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
 
-  background: #ff3b3b;
+  background: #ffd700;
 
-  box-shadow: 0 0 6px rgba(255, 59, 59, 0.8);
+  box-shadow: 0 0 6px #ffd700;
 
-  animation: liveBlink 1s infinite;
+  animation: goldBlink 1s infinite;
 }
 
 
-/* =========================
-   HARD BLINK (NO FADE)
-========================= */
-@keyframes liveBlink {
-  0%, 49% {
-    opacity: 1;
-  }
-  50%, 100% {
-    opacity: 0;
-  }
+/* HARD BLINK */
+@keyframes goldBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
+
+
+
+
+
+

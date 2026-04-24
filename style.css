@@ -1697,21 +1697,29 @@ body {
 
 
 
+
+
+/* Main Card */
 .dex-launch {
-  background: #0f172a;
+  background: linear-gradient(145deg, #0b0b0b, #1a1a1a);
   padding: 25px;
   border-radius: 16px;
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  color: #f5f5f5;
+  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15);
   max-width: 400px;
   margin: 40px auto;
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
+/* Title */
 .dex-launch h3 {
   text-align: center;
   margin-bottom: 15px;
+  color: #ffd700;
+  letter-spacing: 1px;
 }
 
+/* Features Row */
 .dex-features {
   display: flex;
   justify-content: space-between;
@@ -1719,28 +1727,47 @@ body {
   font-size: 14px;
 }
 
+/* Feature Text */
+.dex-features p {
+  color: #e6c200;
+}
+
+/* Inner Box */
 .dex-box {
-  background: #1e293b;
+  background: rgba(255, 215, 0, 0.05);
   padding: 15px;
   border-radius: 12px;
   margin-bottom: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.15);
 }
 
+/* Box Title */
 .dex-box h4 {
   margin-bottom: 10px;
+  color: #ffd700;
 }
 
+/* Price Section */
 .dex-price {
   text-align: center;
 }
 
+/* Price Highlight */
 .dex-price strong {
-  font-size: 18px;
-  color: #22c55e;
+  font-size: 20px;
+  color: #ffd700;
 }
 
+/* Note Text */
 .dex-note {
   font-size: 12px;
-  color: #94a3b8;
+  color: #bfa94a;
   margin-top: 8px;
+}
+
+/* ✨ Hover Effect */
+.dex-launch:hover {
+  box-shadow: 0 15px 50px rgba(255, 215, 0, 0.25);
+  transform: translateY(-3px);
+  transition: 0.3s ease;
 }

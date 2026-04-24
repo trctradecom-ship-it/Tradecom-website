@@ -1771,3 +1771,20 @@ body {
   transform: translateY(-3px);
   transition: 0.3s ease;
 }
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .dex-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dex-features p {
+    margin-bottom: 8px;
+  }
+}

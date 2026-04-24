@@ -1797,13 +1797,19 @@ body {
 
 
 
-.dex-features {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
 
-.dex-features p {
-  text-align: center;
-  min-width: 120px;
+
+@media (min-width: 768px) {
+  .dex-features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .dex-features p {
+    text-align: center;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
 }

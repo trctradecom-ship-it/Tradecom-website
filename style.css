@@ -1777,14 +1777,17 @@ body {
 
 
 
+
 @media (max-width: 600px) {
   .dex-features {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   .dex-features p {
-    margin-bottom: 8px;
+    width: 100%;
+    margin: 6px 0;
   }
 }

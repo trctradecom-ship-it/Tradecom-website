@@ -1795,10 +1795,15 @@ body {
 
 
 
+
+
 .dex-features {
   display: flex;
-  justify-content: center;   /* centers all items */
-  gap: 30px;                 /* equal spacing between them */
-  margin-bottom: 20px;
-  font-size: 14px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.dex-features p {
+  text-align: center;
+  min-width: 120px;
 }
